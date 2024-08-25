@@ -17,7 +17,7 @@ const ApiInteraction = () => {
     setError('');
     try {
         const parsedInput = JSON.parse(input);
-        const apiResponse = await fetch('http://localhost:5000/bfhl', {
+        const apiResponse = await fetch('https://bajaj-finserv-task-b8mx.onrender.com/bfhl', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(parsedInput)
